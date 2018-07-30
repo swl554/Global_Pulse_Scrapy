@@ -2,4 +2,4 @@
 
 Summary:
 
-This scrapy project contains spider modules that takes a specific step in gathering useful data from the web
+This scrapy project contains spider modules that each perform a task required in extracting useful data from the web.
