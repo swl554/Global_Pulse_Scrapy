@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for link_extractor project
+# Scrapy settings for download_files project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'link_extractor'
+#ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
+#FILES_STORE = 'github\Global_Pulse_Scrapy'
 
-SPIDER_MODULES = ['link_extractor.spiders']
-NEWSPIDER_MODULE = 'link_extractor.spiders'
+BOT_NAME = 'download_files'
+
+SPIDER_MODULES = ['download_files.spiders']
+NEWSPIDER_MODULE = 'download_files.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'link_extractor (+http://www.yourdomain.com)'
+#USER_AGENT = 'download_files (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +50,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'link_extractor.middlewares.LinkExtractorSpiderMiddleware': 543,
+#    'download_files.middlewares.DownloadFilesSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'link_extractor.middlewares.LinkExtractorDownloaderMiddleware': 543,
+#    'download_files.middlewares.DownloadFilesDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +68,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'link_extractor.pipelines.LinkExtractorPipeline': 300,
+#    'download_files.pipelines.DownloadFilesPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
